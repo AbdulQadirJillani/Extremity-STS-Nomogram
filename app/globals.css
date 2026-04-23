@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Geist:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-geist: 'Geist', system-ui, sans-serif;
+  --font-fraunces: 'Fraunces', Georgia, serif;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-geist);
+    background-color: #f5f3ef;
+    color: #0f1117;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-fraunces);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Custom range slider */
+  .slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #1a3a5c;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+    cursor: grab;
+    transition: transform 0.1s;
+  }
+  .slider-thumb::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+    cursor: grabbing;
+  }
+  .slider-thumb::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  /* Radix Select trigger override */
+  [data-radix-select-trigger] {
+    font-family: var(--font-geist) !important;
+  }
+}
+
+/* Radix Select portal styles */
+[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+}
