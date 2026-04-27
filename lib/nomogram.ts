@@ -134,27 +134,27 @@ export const TIER_STYLES: Record<
   RiskTier,
   { color: string; bg: string; border: string; label: string }
 > = {
-  low:   { color: "#16875c", bg: "#e6f5ef", border: "#a8dbc5", label: "Low risk" },
-  mod:   { color: "#b85c00", bg: "#fef3e6", border: "#f0c88a", label: "Moderate risk" },
-  high:  { color: "#c0341c", bg: "#fdecea", border: "#f0a898", label: "High risk" },
+  low: { color: "#16875c", bg: "#e6f5ef", border: "#a8dbc5", label: "Low risk" },
+  mod: { color: "#b85c00", bg: "#fef3e6", border: "#f0c88a", label: "Moderate risk" },
+  high: { color: "#c0341c", bg: "#fdecea", border: "#f0a898", label: "High risk" },
   vhigh: { color: "#8b1414", bg: "#fce4e4", border: "#e89090", label: "Very high risk" },
 };
 
 // Histology options
 export const HISTO_OPTIONS = [
-  { value: "lms",     label: "Leiomyosarcoma (reference)" },
+  { value: "lms", label: "Leiomyosarcoma (reference)" },
   { value: "lipo_lg", label: "Liposarcoma, well-differentiated" },
   { value: "lipo_hg", label: "Liposarcoma, dediff./myxoid/pleomorphic" },
-  { value: "mfh",     label: "MFH / Undifferentiated pleomorphic sarcoma" },
-  { value: "ss",      label: "Synovial sarcoma" },
-  { value: "rms",     label: "Rhabdomyosarcoma" },
-  { value: "mpnst",   label: "Malignant peripheral nerve sheath tumour" },
-  { value: "fs",      label: "Fibrosarcoma / Myxofibrosarcoma" },
-  { value: "has",     label: "Haemangiosarcoma" },
-  { value: "es",      label: "Epithelioid sarcoma" },
-  { value: "ccs",     label: "Clear cell sarcoma" },
-  { value: "myxo",    label: "Myxosarcoma" },
-  { value: "nos",     label: "Other / Not otherwise specified" },
+  { value: "mfh", label: "MFH / Undifferentiated pleomorphic sarcoma" },
+  { value: "ss", label: "Synovial sarcoma" },
+  { value: "rms", label: "Rhabdomyosarcoma" },
+  { value: "mpnst", label: "Malignant peripheral nerve sheath tumour" },
+  { value: "fs", label: "Fibrosarcoma / Myxofibrosarcoma" },
+  { value: "has", label: "Hemangiosarcoma" },
+  { value: "es", label: "Epithelioid sarcoma" },
+  { value: "ccs", label: "Clear cell sarcoma" },
+  { value: "myxo", label: "Myxosarcoma" },
+  { value: "nos", label: "Other / Not otherwise specified" },
 ];
 
 export const DEFAULT_INPUTS: NomogramInputs = {

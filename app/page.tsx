@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* ── MAIN ── */}
       <main className="max-w-[1160px] mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 xl:grid-cols-[1fr_380px] gap-7 items-start">
+        <div className="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-7 items-start">
 
           {/* ── LEFT: FORM ── */}
           <div className="flex flex-col gap-5">

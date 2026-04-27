@@ -17,7 +17,7 @@ export function TumourSection({ inputs, onChange }: Props) {
     <SectionCard
       icon={<Search size={14} color="#b85000" strokeWidth={1.75} />}
       iconBg="#fef0e6"
-      title="Tumour characteristics"
+      title="Tumor characteristics"
     >
       <div className="flex flex-col gap-5">
         <div className="grid md:grid-cols-2 gap-5">
@@ -28,7 +28,7 @@ export function TumourSection({ inputs, onChange }: Props) {
             options={HISTO_OPTIONS}
           />
           <SelectField
-            label="Tumour grade"
+            label="Tumor grade"
             value={inputs.grade}
             onChange={(v) => onChange("grade", v as "g1" | "g2" | "hg")}
             options={[
@@ -40,7 +40,7 @@ export function TumourSection({ inputs, onChange }: Props) {
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           <SliderField
-            label="Tumour size"
+            label="Tumor size"
             id="size"
             min={0.5}
             max={30}
@@ -54,10 +54,10 @@ export function TumourSection({ inputs, onChange }: Props) {
             value={inputs.stage}
             onChange={(v) => onChange("stage", v as NomogramInputs["stage"])}
             options={[
-              { value: "loc", label: "Localised (reference)" },
-              { value: "ext", label: "Regional — direct extension" },
-              { value: "nodes", label: "Regional — lymph nodes only" },
-              { value: "both", label: "Regional — extension + nodes" },
+              { value: "loc", label: "Localized (reference)" },
+              { value: "ext", label: "Regional: direct extension only" },
+              { value: "nodes", label: "Regional: lymph nodes only" },
+              { value: "both", label: "Regional: direct extension and lymph nodes" },
             ]}
           />
         </div>
